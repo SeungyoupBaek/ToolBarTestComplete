@@ -24,7 +24,7 @@
     UIBarButtonItem *titleButton = [[UIBarButtonItem alloc] initWithTitle:@"Button" style:UIBarButtonItemStyleDone target:self action:@selector(handleButton:)];
     
     // 세그먼티드컨트롤 추가
-    NSArray *segments = [NSArray arrayWithObjects:@"A", @"B", @"C", nil];
+    NSArray *segments = @[@"A", @"B", @"C"];
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:segments];
     segment.frame = CGRectMake(0, 0, 140, 44);
     UIBarButtonItem *segmentButton = [[UIBarButtonItem alloc] initWithCustomView:segment];
