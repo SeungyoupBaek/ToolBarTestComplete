@@ -20,9 +20,17 @@
                                 <rect key="frame" x="0.0" y="41" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Left" id="zb7-R2-Iqt"/>
+                                    <barButtonItem tag="1" title="Left" id="zb7-R2-Iqt">
+                                        <connections>
+                                            <action selector="handleBarButtonClick:" destination="vXZ-lx-hvc" id="Q07-Cg-YZc"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="211" style="plain" systemItem="fixedSpace" id="eFd-f3-tE5"/>
-                                    <barButtonItem title="Right" id="i61-DQ-OQY"/>
+                                    <barButtonItem title="Right" id="i61-DQ-OQY">
+                                        <connections>
+                                            <action selector="handleBarButtonClick:" destination="vXZ-lx-hvc" id="Cu4-ex-iKt"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
